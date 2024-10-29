@@ -1,0 +1,5 @@
+Javascript es un lenguaje script u orientado a documento.
+Es un lenguaje interpretado que se embebe en una página web HTML.
+Lenguaje interpretado -> Analiza las instrucciones y las procesa el navegador en el momento que deben ser ejecutadas.
+JS es sensible a las MAYUSCULAS Y MINUSCULAS.
+Para detectar errores podemos utilizar la herramienta para programadores que brinda el Browser.

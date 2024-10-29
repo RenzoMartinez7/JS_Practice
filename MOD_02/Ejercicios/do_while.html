@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Ejercicios con Do-While</h1>
+    </header>
+    <section>
+        <h2>Ej 1</h2>
+        <p>
+            En un banco se procesan datos de las cuentas corrientes de sus clientes. De cada cuenta corriente se conoce: 
+            número de cuenta, nombre del cliente y saldo actual. El ingreso de datos debe finalizar al ingresar un valor negativo 
+            en el número de cuenta.
+        </p>
+        <p>
+            Se pide confeccionar un programa que lea los datos de las cuentas corrientes e informe:
+        </p>
+        <p>
+            a) De cada cuenta: número de cuenta, nombre del cliente y estado de la cuenta según su saldo, sabiendo que:
+        </p>
+        <p>
+            Estado de la cuenta	
+            'Acreedor' si el saldo es > 0.
+			'Deudor' si el saldo es < 0.
+			'Nulo' si el saldo es = 0.
+        </p>
+        <p>
+            b) La suma total de los saldos acreedores.
+        </p>
+
+        <script>
+            let numCuenta;
+            let nomCliente;
+            let saldoActual = 0;
+            let sumSaldoAcre = 0;
+            do{
+                numCuenta = prompt('Ingrese un número de cuenta: ');
+                if(numCuenta >= 0){
+                    nomCliente = prompt(`Ingrese el nombre del titular de la cuenta ${numCuenta}: `);
+                    saldoActual = parseFloat(prompt('Ingrese el saldo de la cuenta: '));
+                    if(saldoActual > 0){
+                        sumSaldoAcre = sumSaldoAcre + saldoActual;
+                        document.write(`El estado de la cuenta ${numCuenta} perteneciente a ${nomCliente} es Acreedor con un saldo de ${saldoActual}` + '<br>');
+                    } else if(saldoActual < 0){
+                        document.write(`El estado de la cuenta ${numCuenta} perteneciente a ${nomCliente} es Deudor con un saldo de ${saldoActual}` + '<br>');
+                    } else{
+                        document.write(`El estado de la cuenta ${numCuenta} perteneciente a ${nomCliente} es Nulo con un saldo de ${saldoActual}` + '<br>');
+                    }
+                }
+            } while(numCuenta > 0);
+            document.write(`La suma de las cuentas Acreedoras dan un total de $${sumSaldoAcre}`);
+
+        </script>
+    </section>
+</body>
+</html>

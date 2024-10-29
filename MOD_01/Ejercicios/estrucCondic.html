@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let nota1 = parseFloat(prompt('Ingrese la nota 1 del alumno: '));
+        let nota2 = parseFloat(prompt('Ingrese la nota 2 del alumno: '));
+        let nota3 = parseFloat(prompt('Ingrese la nota 3 del alumno: '));
+
+        let promedio = (nota1 + nota2 + nota3)/3
+
+        if(promedio >= 7){
+            document.write(`Promocionado con la nota ${promedio}`)
+        } else{
+            document.write(`No promocionado con la nota ${promedio}`)
+        }
+
+        document.write('<br>');
+        document.write('<hr>');
+        document.write('<br>');
+
+        let clave1 = prompt('Ingrese su clave: ');
+        let clave2 = prompt('Ingrese su clave de nuevo; ');
+
+        if(clave1 == clave2){
+            document.write('La clave coincidió con éxito!');
+        } else{
+            document.write('No coinciden las claves ingresadas :c');
+        }
+    </script>
+</body>
+</html>

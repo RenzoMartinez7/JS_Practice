@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    // La condicional if verifica si la condición es verdadera para dar pase a las instrucciones que contiene el bloque contenido entre los '{}', en caso contrario, no se ejecuta y sigue su camino
+    let nombre;
+    let nota;
+    nombre = prompt('Ingrese el nombre del alumno: ');
+    nota = parseInt(prompt('Ingresa la nota del alumno: '));
+
+    if (nota >= 4){
+        document.write(`La nota de ${nombre} es aprobatoria`);
+    } else {
+        document.write(`La nota no de ${nombre} es aprobatoria`);
+    }
+
+    // Los operadores que se usan para el if son: > (mayor), >= (mayor o igual), < (menor), <= (menor o igual), != (distinto), == (igual)
+    // Siempre debemos tener en cuenta que en la condición del if deben intervenir una variable un operador relacional y otra variable o valor fijo.
+
+</script>
+
+</body>
+</html>

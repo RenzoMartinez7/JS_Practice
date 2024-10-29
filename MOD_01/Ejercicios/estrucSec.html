@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Realizar la carga del lado de un cuadrado, mostrar por pantalla 
+        //el perímetro del mismo (El perímetro de un cuadrado se calcula 
+        //multiplicando el valor del lado por cuatro)
+        let lado;
+        lado = prompt('Dame el valor del lado del cuadrado: ');
+        let perimetro = parseInt(lado)*4;
+        document.write('El perímetro de tu cuadrado es de ');
+        document.write(perimetro);
+        document.write('<br>');
+        document.write('<hr>');
+        document.write('<br>');
+        
+        //Escribir un programa en el cual se ingresen cuatro números, 
+        //calcular e informar la suma de los dos primeros y el producto del tercero y el cuarto.
+        let num1, num2, num3, num4;
+        num1 = prompt('Asigne el valor 1: ');
+        num2 = prompt('Asigne el valor 2: ');
+        num3 = prompt('Asigne el valor 3: ');
+        num4 = prompt('Asigne el valor 4: ');
+        let suma = parseInt(num1) + parseInt(num2);
+        let producto = parseInt(num3) * parseInt(num4);
+        document.write(`La suma entre ${num1} y ${num2} es de ${suma}`);
+        document.write('<br>');
+        document.write(`El producto de ${num3} y ${num4} es ${producto}`);
+        document.write('<br>');
+        document.write('<hr>');
+        document.write('<br>');
+        
+        // Realizar un programa que lea cuatro valores numéricos e informar su suma y producto.
+		let val1, val2, val3, val4;
+        val1 = prompt('Asigne el num 1: ');
+        val2 = prompt('Asigne el num 2: ');
+        val3 = prompt('Asigne el num 3: ');
+        val4 = prompt('Asigne el num 4: ');
+        let sumaVal = parseInt(val1) + parseInt(val2) + parseInt(val3) + parseInt(val4);
+        let productoVal = parseInt(val1) * parseInt(val2) * parseInt(val3) * parseInt(val4);
+        document.write(`La suma entre ${val1} + ${val2} + ${val3} + ${val4} es de ${sumaVal}`);
+        document.write('<br>');
+        document.write(`El producto de ${val1} * ${val2} * ${val3} * ${val4} es ${productoVal}`);
+        document.write('<br>');
+        document.write('<hr>');
+        document.write('<br>');
+        
+        //Se debe desarrollar un programa que pida el ingreso del precio de un artículo y la cantidad 
+        //que lleva el cliente. Mostrar lo que debe abonar el comprador 
+        //(Ingresar por teclado un precio sin decimales, es decir un entero: 2, 7, 90 etc.)
+        let precio, cantidad;
+        precio = prompt('Asigne el precio del producto: ');
+        cantidad = prompt('Asigne la cantidad que llevará: ');
+        let precioFinal = parseInt(precio) * parseInt(cantidad);
+        document.write(`El precio final es de S/. ${precioFinal}`);
+        document.write('<br>');
+        document.write('<hr>');
+        document.write('<br>');
+    </script>
+</body>
+</html>

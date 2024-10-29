@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+</head>
+<body>
+    <header>
+        <h1>Contador y acumulador</h1>
+    </header>
+    <section>
+        <p>Desarrollar un programa que permita la carga de 5 valores por teclado y nos muestre posteriormente la suma.</p>
+        <script>
+            let x = 1;
+            let suma = 0;
+            let valor;
+
+            while(x <= 5){
+                valor = parseInt(prompt("Ingrese valor: "));
+                suma = suma + valor;
+                x = x + 1;
+            }
+            document.write('La suma de los valores es ' + suma + '<br>');
+        </script>
+        <p>
+            En este problema, a semejanza de los anteriores, llevamos un CONTADOR llamado x que nos sirve para contar las vueltas que debe repetir el while. 
+            También aparece el concepto de ACUMULADOR (un acumulador es un tipo especial de variable que se incrementa o decrementa con valores variables durante la ejecución del programa)
+            Hemos dado el nombre de suma a nuestro acumulador. Cada ciclo que se repita la estructura repetitiva, la variable suma se incrementa con el contenido ingresado en la variable valor.
+        </p>
+    </section>
+</body>
+</html>

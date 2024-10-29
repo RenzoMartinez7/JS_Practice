@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Estructura repititiva WHILE
+        </h1>
+    </header>
+    <section>
+        <p>Una estructura repetitiva permite ejecutar una instrucción o un conjunto de instrucciones varias veces.</p>
+        <p>Una ejecución repetitiva de sentencias se caracteriza por:
+
+            - La o las sentencias que se repiten.
+            - El test o prueba de condición antes de cada repetición, que motivará que se repitan o no las sentencias.</p>
+        <h2>While</h2>
+        <p>En primer lugar se verifica la condición, si la misma resulta verdadera se ejecutan las operaciones que indicamos entre las llaves que le siguen al while.
+            En caso que la condición sea Falsa continúa con la instrucción siguiente al bloque de llaves.
+            
+            El bloque se repite MIENTRAS la condición sea Verdadera.</p>
+        <h3>IMPORTANTE</h3> 
+        <p>Si la condición siempre retorna verdadero estamos en presencia de un ciclo repetitivo infinito. Dicha situación es un error de programación, nunca finalizará el programa.</p>
+        <h3>EJEMPLO</h3>
+        <p>Realizar un programa que imprima en pantalla los números del 1 al 100.</p>
+        <script>
+            let x;
+            x = 1;
+            while(x <= 100){
+                document.write(x);
+                document.write('<br>');
+                x = x + 1;
+            }
+        </script>
+    </section>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let num1 = parseInt(prompt('Ingrese num 1: '));
+        let num2 = parseInt(prompt('Ingrese num 2: '));
+        
+        if(num1 > num2){
+            let suma = num1 + num2;
+            let resta = num1 - num2;
+            document.write('La suma es ' + suma + ' y la diferencia es ' + resta);
+        } else{
+            let producto = num1 * num2;
+            let division = num1/num2;
+            document.write('El producto es: ' + producto + ' y la división es ' + division);
+        }
+
+        document.write('<br>');
+        document.write('<hr>');
+        document.write('<br>');
+
+        let num = parseInt(prompt('Ingresa un num'));
+        if (10 <= num && num <= 99){
+            document.write(`El número ${num} es de dos dígito`);
+        } else if (0 <= num && num <= 9){
+            document.write(`El número ${num} es de un dígito`);
+        } else {
+            document.write('Error: Debes ingresar un número del 1 al 99');
+        }
+
+    </script>
+
+</body>
+</html>
