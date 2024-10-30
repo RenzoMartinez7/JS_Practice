@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>  
+    <header>
+        <h1>Ej 1</h1>
+    </header>
+    <section>
+        <p>Confeccionar una función que solicite la carga de dos enteros 
+            (primero el menor y luego el mayor) y nos muestre desde el menor hasta el mayor de uno en uno.</p>
+    </section>
+
+    <script>
+        function dosEnteros(){
+            let valor1 = parseInt(prompt('Ingrese un valor: '));
+            let valor2 = parseInt(prompt(`Ingrese un valor mayor que ${valor1}`));
+            for(let i = valor1; i <= valor2; i++){
+                document.write(i + ' - ');
+            }
+        }
+
+        dosEnteros();
+
+    </script>
+
+</body>
+</html>

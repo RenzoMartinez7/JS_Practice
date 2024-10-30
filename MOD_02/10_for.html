@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Estructura repetitiva For</h1>
+    </header>
+    <section>
+        <p>
+            Esta estructura se emplea en aquellas situaciones en las cuales CONOCEMOS la cantidad de veces que 
+            queremos que se ejecute el bloque de instrucciones. 
+            Ejemplo: cargar 10 números, ingresar 5 notas de alumnos, etc. 
+            Conocemos de antemano la cantidad de veces que queremos que el bloque se repita.
+        </p>
+        <p>
+            Por último, hay que decir que la ejecución de la sentencia break dentro de cualquier parte del 
+            bucle provoca la salida inmediata del mismo.
+        </p>
+        <p>
+            Sintaxis:
+                for ({Inicialización} ; {Condición} ; {Incremento o Decremento})
+                {
+                    {Instrucciones}
+                }
+        </p>
+        <p>
+            Funcionamiento:
+	        1 - Primero se ejecuta por única vez el primer argumento <Inicialización>.
+            Por lo general se inicializa una variable.
+	        2 - El segundo paso es evaluar la (Condición), en caso de ser verdadera se ejecuta
+            el bloque, en caso contrario continúa el programa.
+	        3 - El tercer paso es la ejecución de las instrucciones.
+	        4 - El cuarto paso es ejecutar el tercer argumento (Incremento o Decremento).
+	        5 - Luego se repiten sucesivamente del Segundo al Cuarto Paso.
+        </p>
+        <p>
+            Este tipo de estructura repetitiva se utiliza generalmente cuando sabemos la cantidad 
+            de veces que deseamos que se repita el bloque.
+        </p>
+        <h2>Ejemplo: Mostrar por pantalla los números del 1 al 10.</h2>
+        <script>
+            for (let f = 1; f <= 10; f++){
+                document.write(f + " ");
+            }
+        </script>
+    </section>
+
+</body>
+</html>

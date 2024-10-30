@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios con For</title>
+</head>
+<body>
+    <header>
+        <h1>Ejercicios FOR</h1>
+    </header>
+    <section>
+        <h2>Ej 1</h2>
+        <p>
+            Confeccionar un programa que lea 3 pares de datos, cada par de datos corresponde a la 
+            medida de la base y la altura de un triángulo. El programa deberá informar:
+            a) De cada triángulo la medida de su base, su altura y su superficie.
+            b) La cantidad de triángulos cuya superficie es mayor a 12.
+        </p>
+        <script>
+            let cont = 0;
+            for(let i = 1; i <= 3; i++){
+                let base = parseInt(prompt(`Ingresa la medida de la base del triángulo ${i}`));
+                let altura = parseInt(prompt(`Ingresa la medida de la altura del triángulo ${i}`));
+                let superficie = (base*altura)/2;
+                if(superficie > 12){
+                    cont++;
+                }
+                document.write('<b>' + `Triángulo ${i}` + '</b>' + '<br>');
+                document.write(`base ${base}` + '<br>');
+                document.write(`altura ${altura}` + '<br>');
+                document.write(`superficie ${superficie}` + '<br>' + '<br>');
+            }
+
+            document.write(`Hay ${cont} triángulos con una superficie superior a 12.`);
+
+        </script>
+        <h2>Ej 2</h2>
+        <p>Desarrollar un programa que muestre la tabla de multiplicar del 5 (del 5 al 50).</p>
+        <script>
+            for(let f = 0; f <= 50; f++){
+                let multiplicar = 5 * f;
+                document.write(`5 x ${f} = ${multiplicar}` + '<br>');
+            }
+        </script>
+    </section>
+</body>
+</html>

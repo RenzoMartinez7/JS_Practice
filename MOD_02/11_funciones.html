@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+</head>
+<body>
+    <header>
+        <h1>Funciones</h1>
+    </header>
+    <section>
+        <p>Una función es un conjunto de instrucciones que realiza una tarea o calcula un valor.</p>
+        <p>Problema: Confeccionar una función que solicite el ingreso de un entero y nos muestre la tabla de multiplicar de dicho valor. 
+            Llamar luego una vez a la función.
+        </p>
+        <script>
+            function calcularTabla() {
+                let valor = parseInt(prompt("Ingrese que tabla de multiplicar quiere obtener: "))
+                for (let f = 1; f <= 10; f++) {
+                    let tabla = f * valor;
+                    document.write(f + " * " + valor + " = " + tabla + '<br>')
+                }
+            }
+
+            calcularTabla();
+        </script>
+    </section>
+</body>
+</html>
