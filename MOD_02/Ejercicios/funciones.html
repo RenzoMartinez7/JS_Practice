@@ -7,25 +7,48 @@
 </head>
 <body>  
     <header>
-        <h1>Ej 1</h1>
+        
     </header>
     <section>
+        <h1>Ej 1</h1>
         <p>Confeccionar una función que solicite la carga de dos enteros 
             (primero el menor y luego el mayor) y nos muestre desde el menor hasta el mayor de uno en uno.</p>
-    </section>
+    
 
-    <script>
-        function dosEnteros(){
-            let valor1 = parseInt(prompt('Ingrese un valor: '));
-            let valor2 = parseInt(prompt(`Ingrese un valor mayor que ${valor1}`));
-            for(let i = valor1; i <= valor2; i++){
-                document.write(i + ' - ');
+        <script>
+            function dosEnteros(){
+                let valor1 = parseInt(prompt('Ingrese un valor: '));
+                let valor2 = parseInt(prompt(`Ingrese un valor mayor que ${valor1}`));
+                for(let i = valor1; i <= valor2; i++){
+                    document.write(i + ' - ');
+                }
             }
-        }
 
-        dosEnteros();
+            dosEnteros();
 
-    </script>
+        </script>
+        <h1>Ej 2</h1>
+        <p>Elaborar una función a la cual le enviemos tres enteros y muestre el menor.</p>
+        <script>
+            function mostrarMenor(n1, n2, n3){
+                if(n1 < n2 && n1 < n3){
+                    document.write(`El número menor de los tres es ${n1}`);
+                } else if(n2 < n1 && n2 < n3){
+                    document.write(`El número menor de los tres es ${n2}`);
+                } else if(n3 < n1 && n3 < n2){
+                    document.write(`El número menor de los tres es ${n3}`);
+                } else {
+                    document.write('Hay dos o más números iguales.');
+                }
+            }
 
+            let valor1 = parseInt(prompt('Ingrese el valor 1: '));
+            let valor2 = parseInt(prompt('Ingrese el valor 2: '));
+            let valor3 = parseInt(prompt('Ingrese el valor 3: '));
+
+            mostrarMenor(valor1, valor2, valor3);
+
+        </script>
+    </section>
 </body>
 </html>
