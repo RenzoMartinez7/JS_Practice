@@ -27,27 +27,44 @@
             dosEnteros();
 
         </script>
+    </section>
+    <section>
         <h1>Ej 2</h1>
-        <p>Elaborar una función a la cual le enviemos tres enteros y muestre el menor.</p>
+        <p>Confeccionar una función a la cual le envíe tres enteros y los muestre ordenados de menor a mayor.</p>
         <script>
-            function mostrarMenor(n1, n2, n3){
-                if(n1 < n2 && n1 < n3){
-                    document.write(`El número menor de los tres es ${n1}`);
-                } else if(n2 < n1 && n2 < n3){
-                    document.write(`El número menor de los tres es ${n2}`);
-                } else if(n3 < n1 && n3 < n2){
-                    document.write(`El número menor de los tres es ${n3}`);
+            function ordenarNums(num1, num2, num3){
+                if(num1 < num2 && num1 < num3){
+                    document.write(`${num1} `);
+                    if(num2 < num3){
+                        document.write(`${num2} ${num3}`);
+                    } else{
+                        document.write(`${num3} ${num2}`);
+                    }
                 } else {
-                    document.write('Hay dos o más números iguales.');
+                    if(num2 < num3){
+                        document.write(`${num2} `);
+                        if(num1 < num3){
+                            document.write(`${num1} ${num3}`);
+                        } else{
+                            document.write(`${num3} ${num1}`);
+                        }
+                    } else{
+                        document.write(`${num3} `);
+                        if(num2 < num1){
+                            document.write(`${num2} ${num1}`);
+                        } else{
+                            document.write(`${num1} ${num2}`);
+                        }
+                    }
                 }
             }
 
-            let valor1 = parseInt(prompt('Ingrese el valor 1: '));
-            let valor2 = parseInt(prompt('Ingrese el valor 2: '));
-            let valor3 = parseInt(prompt('Ingrese el valor 3: '));
-
-            mostrarMenor(valor1, valor2, valor3);
-
+            let num1 = parseInt(prompt(`Ingrese el primer valor: `));
+            let num2 = parseInt(prompt(`Ingrese el segundo valor: `));
+            let num3 = parseInt(prompt(`Ingrese el tercer valor: `));
+            document.write(`Los números ingresados son: ${num1} - ${num2} - ${num3}` + '<br>');
+            document.write('El orden es: ')
+            ordenarNums(num1, num2, num3);
         </script>
     </section>
 </body>
