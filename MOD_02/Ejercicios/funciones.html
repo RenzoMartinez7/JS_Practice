@@ -9,7 +9,7 @@
     <header>
         <h1>Ejercicios con Funciones</h1>
     </header>
-    <section>
+    <!-- <section>
         <h2>Ej 1</h2>
         <p>Confeccionar una función que solicite la carga de dos enteros 
             (primero el menor y luego el mayor) y nos muestre desde el menor hasta el mayor de uno en uno.</p>
@@ -92,6 +92,57 @@
             }
 
             document.write(cargarCincoValores());
+
+        </script>
+    </section> -->
+    <section>
+        <h2>Ej 4</h2>
+        <p>Realizar una calculadora</p>
+        <script>
+            function calcular(operador){
+                let valores = parseInt(prompt('¿Con cuántos valores deseas operar?'));
+                let cont = 1;
+                let aux = 0;
+                let result = 0;
+                while(cont <= valores){
+                    let valor = parseFloat(prompt(`Ingresa el valor ${cont}`));
+                    switch(operador){
+                        case '+': 
+                            result = valor + aux;
+                            aux = result;
+                            break;
+                        case '-': 
+                            result = valor - aux;
+                            aux = result;
+                            break;
+                        case '*':
+                            if(aux == 0){
+                                result = valor * 1;
+                                aux = result;
+                            } else{
+                                result = valor * aux;
+                                aux = result;
+                            }
+                            break;
+                        case '/': 
+                        if(aux == 0){
+                                result = valor;
+                                aux = result;
+                            } else{
+                                result = valor / aux;
+                                aux = result;
+                            }
+                            break;
+                        default:
+                            console.log('Se ingresó un operador no conocido: ');
+                    }
+                    cont++;
+                }
+
+                return result;
+            }
+
+            document.write(calcular(prompt('Escoge tu operador (+ - * /): ')));
 
         </script>
     </section>
