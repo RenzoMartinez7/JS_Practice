@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Confeccionar un programa que muestre en que cuatrimestre del año nos encontramos. Para esto obtener el mes.
+    </p>
+
+    <section>
+        <script>
+            function cuatrimestre(){
+                let fecha = new Date();
+                let mes = fecha.getMonth() + 1;
+                document.write(`Estamos en el mes ${mes}` + '<br>');
+
+                if(mes >= 1 && mes <= 3){
+                    document.write(`Estamos en el primer cuatrimestre`);
+                } else if(mes >= 4 && mes <= 6){
+                    document.write(`Estamos en el segundo cuatrimestre`);
+                } else if(mes >= 7 && mes <= 9){
+                    document.write(`Estamos en el tercer cuatrimestre`);
+                } else{
+                    document.write(`Estamos en el cuarto cuatrimestre`);
+                }
+            }
+
+            cuatrimestre();
+        </script>
+    </section>
+
+    <br>
+
+    <section>
+        <div>
+            <p>
+                Confeccionar una función que nos retorne un string con el siguiente formato: 
+                Hoy es Lunes 9 de Agosto de 2021
+            </p>
+        </div>
+        <div>
+            <script>
+                function fechaFormateada(){
+                    let fecha = new Date();
+                    
+                    let day = fecha.getDate();
+                    const list_day = ['Domingo','Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'];
+                    let nom_day = list_day[fecha.getDay()]; 
+                    
+                    let month = fecha.getMonth();
+                    const list_month = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+                    let nom_month = list_month[month];
+
+                    let year = fecha.getFullYear();
+
+                    document.write(`Hoy es ${nom_day} ${day} de ${nom_month} de ${year}`);
+                }
+
+                fechaFormateada();
+            </script>
+        </div>
+    </section>
+</body>
+</html>
